@@ -61,9 +61,28 @@ td {
 	padding: 4px 8px;
 }
 
+.page {
+	text-align: center;
+}
+
 table {
 	border-collapse: collapse;
+	margin: 0 auto;
+	text-align: left;
 }
+.table-center {
+	margin: 0 auto;
+}
+
+img {
+	border: 0;
+}
+
+.align-center { text-align: center; }
+.align-left { text-align: left; }
+.valign-top { vertical-align: top; }
+.valign-middle { vertical-align: middle; }
+.valign-bottom { vertical-align: bottom; }
 
 .title {
 	font-size: 26px;
@@ -80,6 +99,8 @@ table {
 	border-radius: 8px;
 	background-color: var(--head-bg);
 	padding: 2px;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .headtext {

@@ -249,7 +249,7 @@ sub _htmlheader
 $CSS
 </head>
 <body>
-<div align="center">
+<div class="page">
 HTML
     }
     _html('<h1 class="title" id="pagetitle1">' . $title . '</h1>');
@@ -357,17 +357,9 @@ sub _headline
     my ($title) = (@_);
     _html( <<HTML );
    <br />
-   <table width="$self->{cfg}->{headwidth}" cellpadding="1" cellspacing="0" border="0">
-    <tr>
-     <td class="headlinebg">
-      <table width="100%" cellpadding="2" cellspacing="0" border="0">
-       <tr>
-        <td class="headtext">$title</td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>
+   <div class="headlinebg" style="width:$self->{cfg}->{headwidth}px">
+    <div class="headtext">$title</div>
+   </div>
 HTML
 }
 
@@ -424,11 +416,11 @@ sub _activedays
     );
     $self->_headline($self->_template_text('dailyactivitytopic', %hash));
 
-    _html("<table border=\"0\"><tr>");
+    _html("<table><tr>");
 
     for (my $day = $days - $ndays + 1; $day <= $days ; $day++) {
         my $lines = $self->{stats}->{day_lines}[$day];
-        _html("<td align=\"center\" valign=\"bottom\" class=\"asmall\">$lines<br />");
+        _html("<td class=\"asmall valign-bottom\">$lines<br />");
         for (my $time = 4; $time >= 0; $time--) {
             if (defined($self->{stats}->{day_times}[$day][$time])) {
                 my $size = int(($self->{stats}->{day_times}[$day][$time] / $highest_value) * 100);
@@ -445,7 +437,7 @@ sub _activedays
     _html("</tr><tr>");
 
     for (my $day = $ndays - 1; $day >= 0 ; $day--) {
-        _html("<td class=\"rankc10center\" align=\"center\">$day</td>");
+        _html("<td class=\"rankc10center\">$day</td>");
     }
 
     _html("</tr></table>");
@@ -477,16 +469,16 @@ sub _activetimes
         my $image = "pic_v_".(int($hour/6)*6);
         $image = $self->{cfg}->{$image};
 
-        $output{$hour} = "<td align=\"center\" valign=\"bottom\" class=\"asmall\">$percent%<br /><div class=\"bar-v $image\" style=\"height:${size}px\" title=\"$lines_per_hour\"></div></td>" if $size;
+        $output{$hour} = "<td class=\"asmall valign-bottom\">$percent%<br /><div class=\"bar-v $image\" style=\"height:${size}px\" title=\"$lines_per_hour\"></div></td>" if $size;
     }
 
-    _html("<table border=\"0\"><tr>");
+    _html("<table><tr>");
 
     for ($b = 0; $b < 24; $b++) {
         $a = sprintf("%02d", $b);
 
         if (!defined($output{$a})) {
-            _html("<td align=\"center\" valign=\"bottom\" class=\"asmall\">0%</td>");
+            _html("<td class=\"asmall valign-bottom\">0%</td>");
         } else {
             _html($output{$a});
         }
@@ -500,7 +492,7 @@ sub _activetimes
     for ($b = 0; $b < 24; $b++) {
         # Highlight the top time
         my $class = $toptime[0] == $b ? 'hirankc10center' : 'rankc10center';
-        _html("<td class=\"$class\" align=\"center\">$b</td>");
+        _html("<td class=\"$class\">$b</td>");
     }
 
     _html("</tr></table>");
@@ -518,7 +510,7 @@ sub _activenicks
     $self->_headline($self->_template_text('activenickstopic'));
 
     my $output = "";
-    $output .= "<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>";
+    $output .= "<table width=\"$self->{cfg}->{tablewidth}\"><tr>";
     $output .= "<td>&nbsp;</td>";
     $output .= "<td class=\"tdtop\"><b>" . $self->_template_text('nick') . "</b></td>";
 
@@ -607,7 +599,7 @@ sub _activenicks
             }
         }
 
-        _html("<tr><td class=\"$class\" align=\"left\">$c</td>");
+        _html("<tr><td class=\"$class\">$c</td>");
 
         my $line = $self->{stats}->{lines}{$nick};
         my $w = $self->{stats}->{words}{$nick} ? $self->{stats}->{words}{$nick} : 0;
@@ -1617,7 +1609,7 @@ sub _lasttopics
             _html('<tr><td class="hicell"><i>' . $self->_format_line($topic) . '</i></td>');
             _html('<td class="hicell"><b>' . $self->_template_text('bylinetopic', %hash) . '</b></td></tr>');
         }
-        _html("<tr><td align=\"center\" colspan=\"2\" class=\"asmall\">" . $self->_template_text('totaltopic', %hash) . "</td></tr>");
+        _html("<tr><td colspan=\"2\" class=\"asmall\">" . $self->_template_text('totaltopic', %hash) . "</td></tr>");
     } else {
         _html("<tr><td class=\"hicell\">" . $self->_template_text('notopic') ."</td></tr>");
     }
@@ -1748,7 +1740,7 @@ sub _mostusedword
     if (@popular) {
         $self->_headline($self->_template_text('mostwordstopic'));
 
-        _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+        _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
         _html("<td>&nbsp;</td><td class=\"tdtop\"><b>" . $self->_template_text('word') . "</b></td>");
         _html("<td class=\"tdtop\"><b>" . $self->_template_text('numberuses') . "</b></td>");
         _html("<td class=\"tdtop\"><b>" . $self->_template_text('lastused') . "</b></td></tr>");
@@ -1841,7 +1833,7 @@ sub _mostreferencednicks
 
         $self->_headline($self->_template_text('referencetopic'));
 
-        _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+        _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
         _html("<td>&nbsp;</td><td class=\"tdtop\"><b>" . $self->_template_text('nick') . "</b></td>");
         _html("<td class=\"tdtop\"><b>" . $self->_template_text('numberuses') . "</b></td>");
         _html("<td class=\"tdtop\"><b>" . $self->_template_text('lastused') . "</b></td></tr>");
@@ -1884,7 +1876,7 @@ sub _smileys
 
     $self->_headline($self->_template_text('smileytopic'));
 
-    _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+    _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
     _html("<td>&nbsp;</td><td class=\"tdtop\"><b>" . $self->_template_text('smiley') . "</b></td>");
     _html("<td class=\"tdtop\"><b>" . $self->_template_text('numberuses') . "</b></td>");
     _html("<td class=\"tdtop\"><b>" . $self->_template_text('lastused') . "</b></td></tr>");
@@ -1925,7 +1917,7 @@ sub _karma
 
     $self->_headline($self->_template_text('karmatopic'));
 
-    _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+    _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
     _html("<td>&nbsp;</td><td class=\"tdtop\"><b>" . $self->_template_text('nick') . "</b></td>");
     _html("<td class=\"tdtop\"><b>" . $self->_template_text('karma') . "</b></td>");
     _html("<td class=\"tdtop\"><b>" . $self->_template_text('goodkarma') . "</b></td>");
@@ -2002,7 +1994,7 @@ sub _mosturls
 
         $self->_headline($self->_template_text('urlstopic'));
 
-        _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+        _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
         _html("<td>&nbsp;</td><td class=\"tdtop\"><b>" . $self->_template_text('url') . "</b></td>");
         _html("<td class=\"tdtop\"><b>" . $self->_template_text('numberuses') . "</b></td>");
         _html("<td class=\"tdtop\"><b>" . $self->_template_text('lastused') . "</b></td></tr>");
@@ -2041,7 +2033,7 @@ sub _charts
 
         $self->_headline($self->_template_text('chartstopic'));
 
-        _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+        _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
         _html("<td>&nbsp;</td><td class=\"tdtop\"><b>" . $self->_template_text('song') . "</b></td>");
         _html("<td class=\"tdtop\"><b>" . $self->_template_text('numberplayed') . "</b></td>");
         _html("<td class=\"tdtop\"><b>" . $self->_template_text('playedby') . "</b></td></tr>");
@@ -2070,11 +2062,11 @@ sub _legend
 {
     # A legend showing the timebars and their associated time.
     my $self = shift;
-    _html("<table align=\"center\" border=\"0\" width=\"520\"><tr>");
-    _html("<td align=\"center\" class=\"asmall\"><div class=\"bar-h $self->{cfg}->{pic_h_0}\" style=\"width:40px\"></div> = 0-5</td>");
-    _html("<td align=\"center\" class=\"asmall\"><div class=\"bar-h $self->{cfg}->{pic_h_6}\" style=\"width:40px\"></div> = 6-11</td>");
-    _html("<td align=\"center\" class=\"asmall\"><div class=\"bar-h $self->{cfg}->{pic_h_12}\" style=\"width:40px\"></div> = 12-17</td>");
-    _html("<td align=\"center\" class=\"asmall\"><div class=\"bar-h $self->{cfg}->{pic_h_18}\" style=\"width:40px\"></div> = 18-23</td>");
+    _html("<table class=\"table-center\" width=\"520\"><tr>");
+    _html("<td class=\"asmall\"><div class=\"bar-h $self->{cfg}->{pic_h_0}\" style=\"width:40px\"></div> = 0-5</td>");
+    _html("<td class=\"asmall\"><div class=\"bar-h $self->{cfg}->{pic_h_6}\" style=\"width:40px\"></div> = 6-11</td>");
+    _html("<td class=\"asmall\"><div class=\"bar-h $self->{cfg}->{pic_h_12}\" style=\"width:40px\"></div> = 12-17</td>");
+    _html("<td class=\"asmall\"><div class=\"bar-h $self->{cfg}->{pic_h_18}\" style=\"width:40px\"></div> = 18-23</td>");
     _html("</tr></table>");
 }
 
@@ -2199,7 +2191,8 @@ sub _user_pic
     return unless $self->{users}->{userpics}{$nick} or $self->{cfg}->{defaultpic};
 
     my $rowspan = $self->{cfg}->{userpics} ? " rowspan=\"$self->{cfg}->{userpics}\"" : "";
-    my $output = "<td $style align=\"center\" valign=\"middle\"$rowspan>";
+    (my $picstyle = $style) =~ s/"$/ align-center valign-middle"/;
+    my $output = "<td $picstyle$rowspan>";
 
     my $biguserpic = $self->{users}->{biguserpics}{$nick};
     if ($biguserpic) {
@@ -2216,8 +2209,7 @@ sub _user_pic
     my $height = $self->{cfg}->{picheight} ? " height=\"$self->{cfg}->{picheight}\"" : "";
     my $width = $self->{cfg}->{picwidth} ? " width=\"$self->{cfg}->{picwidth}\"" : "";
     my $alt = $self->{users}->{userpics}{$nick} ? " alt=\"$nick\" title=\"$nick\"" : ' alt=""';
-    my $border = $biguserpic ? ' border="0"' : '';
-    $output .= "<img src=\"$pic\"$width$height$alt$border />";
+    $output .= "<img src=\"$pic\"$width$height$alt />";
 
     $output .= "</a>" if $biguserpic;
     _html("$output</td>");
@@ -2239,7 +2231,7 @@ sub _mostnicks
         my $names2 = $self->_template_text('names2');
         my $nick_txt = $self->_template_text('nick');
         my $names_txt = $self->_template_text('names');
-        _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+        _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
         _html("<td>&nbsp;</td><td class=\"tdtop\"><b>$nick_txt</b></td>");
         _html("<td class=\"tdtop\"><b>$names_txt</b></td></tr>");
 
@@ -2259,10 +2251,10 @@ sub _mostnicks
             _html("<tr><td class=\"$class\">$a</td>");
             if ($self->{cfg}->{mostnicksverbose}) { 
                 _html("<td class=\"hicell\">$nick ($nickcount $n)</td>");
-                _html("<td class=\"hicell\" valign='top'>$nickused</td>");
+                _html("<td class=\"hicell valign-top\">$nickused</td>");
             } else {
                 _html("<td class=\"hicell\">$nick</td>");
-                _html("<td class=\"hicell\" valign='top'>$nickcount $n</td>");
+                _html("<td class=\"hicell valign-top\">$nickcount $n</td>");
             }
             _html("</tr>");
             last if $a >= $self->{cfg}->{mostnickshistory};
@@ -2319,7 +2311,7 @@ sub _mostactivebyhour
 
         $self->_headline($self->_template_text('activenickbyhourtopic'));
 
-        _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+        _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
         _html("<td>&nbsp;</td>");
         _html("<td class=\"tdtop\"><b>0-5</b></td>");
         _html("<td class=\"tdtop\"><b>6-11</b></td>");
@@ -2423,7 +2415,7 @@ sub _activegenders {
     return unless @topgender;
 
     $self->_headline($self->_template_text('activegenderstopic'));
-    _html("<table border=\"0\" width=\"$self->{cfg}->{tablewidth}\"><tr>");
+    _html("<table width=\"$self->{cfg}->{tablewidth}\"><tr>");
     _html(" <td>&nbsp;</td>"
     . "<td class=\"tdtop\"><b>" . $self->_template_text('gender') . "</b></td>"
     . "<td class=\"tdtop\"><b>" . $self->_template_text('numberlines') . "</b></td>"
@@ -2454,7 +2446,7 @@ sub _activegenders {
         my $class = ($i == 1 ? "hirankc" : "rankc");
         my $span_class = $gender eq 'm' ? "male" : ($gender eq 'f' ? "female" : "bot");
         _html("</tr><tr>");
-        _html(" <td class=\"$class\" align=\"left\">$i</td>");
+        _html(" <td class=\"$class\">$i</td>");
         _html(" <td class=\"hicell\"><span class=\"$span_class\">" . $self->_template_text("gender_$gender") . "</span></td>");
         _html(" <td class=\"hicell\"><span style=\"white-space:nowrap;\">$bar</span> $self->{stats}->{sex_lines}{$gender}</td>");
         _html(" <td class=\"hicell\">$nicklist</td>");
