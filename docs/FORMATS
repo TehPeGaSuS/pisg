@@ -587,8 +587,10 @@ lulubot
 
   - Parser written by Vianney Lecroart <acemtp@free.fr>
 
-weechat, weechat3
------------------
+weechat, weechat3, weechat4
+----------------------------
   - http://weechat.flashtux.org/
-  - There are two parsers, one for the old log format ("weechat"), and one for
-    the new format starting from version 0.3 ("weechat3").
+  - There are three parsers: one for the old log format ("weechat"), one for
+    the format used from version 0.3 onward ("weechat3"), and one for the
+    format used by WeeChat >= 3.x/4.x whose default timestamp adds fractional
+    seconds and a trailing "Z" ("weechat4").
