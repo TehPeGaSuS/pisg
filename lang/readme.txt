@@ -7,6 +7,9 @@
 # Translations in this file with current maintainers:
 #
 # (EN) English
+# (EN_NEUTRAL) English, gender-neutral - avoids he/she/him/her/his in
+#              generated text (singular "they" throughout), regardless of
+#              any per-user sex= config.
 # (DE) German - Christoph Berg <cb@df7cb.de> (2005-07-28)
 # (NO) Norwegian - Andreas Blaafladt <andreas@blaafladt.no>
 # (PT) Portuguese - MrWho <mrwho@softhome.net>
