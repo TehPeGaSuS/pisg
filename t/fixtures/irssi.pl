@@ -1,0 +1,17 @@
+[
+    { method => 'normalline', line => '12:34 <bob> hello there',
+      expect => { hour => '12', nick => 'bob', saying => 'hello there' } },
+    { method => 'actionline', line => '12:34  * bob waves',
+      expect => { hour => '12', nick => 'bob', saying => 'waves' } },
+    { method => 'thirdline', line => '12:34 -!- bob was kicked from #channel by alice [bye]',
+      expect => { hour => '12', min => '34', nick => 'bob', kicker => 'alice' } },
+    { method => 'thirdline', line => '12:34 -!- bob changed topic of #channel to: new topic here',
+      expect => { hour => '12', min => '34', nick => 'bob', newtopic => ' new topic here' } },
+    { method => 'thirdline', line => '12:34 -!- mode/#channel [+o alice] by bob',
+      expect => { hour => '12', min => '34', nick => 'bob', newmode => '+o' } },
+    { method => 'thirdline', line => '12:34 -!- bob [user@host] has joined #channel',
+      expect => { hour => '12', min => '34', nick => 'bob', newjoin => 'bob' } },
+    { method => 'thirdline', line => '12:34 -!- bob is now known as bobby',
+      expect => { hour => '12', min => '34', nick => 'bob', newnick => 'bobby' } },
+    { method => 'normalline', line => 'not a valid line at all', expect => undef },
+]
