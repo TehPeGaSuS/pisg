@@ -147,11 +147,25 @@ sub analyze
         };
         my $l = {};
 
-        if ($self->{cfg}->{cachedir} and $self->_read_cache(\$s, \$l, $logfile)) {
+        my $cache_status = $self->{cfg}->{cachedir} ? $self->_read_cache(\$s, \$l, $logfile) : undef;
+
+        if ($cache_status) {
             # take care of false nicks/words, this only happens with cache
             foreach (keys %{$s->{lastvisited}}) {
                 find_alias($_);
             }
+            if ($cache_status eq 'resume') {
+                # Cache is valid and the logfile still exists with at least
+                # as many bytes as we'd already parsed: continue parsing
+                # only the bytes appended since last time, into the same
+                # (restored) stats/lines accumulators.
+                $self->_parse_file($s, $l, $logfile, $s->{byte_offset});
+                $self->_update_cache($s, $l, $logfile);
+            }
+            # $cache_status eq 'gone': the logfile has been deleted/rotated
+            # away since it was fully parsed last time. It was already
+            # completely accounted for in the cache, so there's nothing
+            # left to read - the cached totals are final.
         } else {
             $self->_parse_file($s, $l, $logfile);
             if ($self->{cfg}->{cachedir}) {
@@ -286,7 +300,7 @@ sub _parse_dir
 sub _parse_file
 {
     my $self = shift;
-    my ($stats, $lines, $file) = @_;
+    my ($stats, $lines, $file, $resume_offset) = @_;
 
     if ($file =~ /.bz2?$/ && -f $file) {
         open (LOGFILE, "bunzip2 -c $file |") or
@@ -300,6 +314,17 @@ sub _parse_file
     } else {
         open (LOGFILE, $file) or
         die("$0: Unable to open logfile($file): $!\n");
+    }
+
+    if ($resume_offset) {
+        # Skip straight past everything we've already parsed in a prior
+        # run instead of re-reading and re-matching it. Only plain files
+        # opened directly above support seek(); compressed logs are piped
+        # through an external decompressor and always parsed from byte 0
+        # (the caller only ever passes a resume offset for plain files).
+        seek(LOGFILE, $resume_offset, 0) or
+            die("$0: Unable to seek in logfile($file): $!\n");
+        $. = $stats->{lines_parsed} || 0;
     }
 
     while(my $line = <LOGFILE>) {
@@ -610,6 +635,11 @@ sub _parse_file
     }
 
     $stats->{totallines} = $.;
+    $stats->{lines_parsed} = $.;
+    # Only meaningful for plain (uncompressed) files - piped decompressor
+    # filehandles aren't seekable, so a resume is never attempted on them
+    # regardless of what gets stored here.
+    $stats->{byte_offset} = tell(LOGFILE);
 
     close(LOGFILE);
 }
@@ -795,8 +825,18 @@ sub _adjusttimeoffset
 
 sub _read_cache
 {
+    # Returns:
+    #   undef    - no usable cache, caller must do a full parse
+    #   'gone'   - logfile no longer exists; cached totals are final, since
+    #              everything in it was already fully accounted for the
+    #              last time it was parsed. This is what lets old logfiles
+    #              be deleted once pisg has seen them, the same way
+    #              superseriousstats' parse_history lets old logs be
+    #              deleted once they're in the database.
+    #   'resume' - logfile still exists and is at least as big as it was
+    #              last time; caller should continue parsing from
+    #              $stats->{byte_offset} instead of from scratch.
     my ($self, $statsref, $linesref, $logfile) = @_;
-    my $csum = (split(' ', `sum -s $logfile`))[0];
     my $cachefile = $logfile;
     $cachefile =~ s/[^\w-]/_/go;
     $cachefile = "$self->{cfg}->{cachedir}/$cachefile";
@@ -809,25 +849,41 @@ sub _read_cache
 
     return undef if $stats->{version} and $stats->{version} ne $self->{cfg}->{version};
     return undef unless $stats->{logfile} eq $logfile; # the name might be ambigous
-    return undef if $stats->{logfile_csum} != $csum; # file has changed
+    return undef unless defined $stats->{byte_offset}; # cache predates incremental parsing
 
-    print "cached, " unless $self->{cfg}->{silent};
+    unless (-e $logfile) {
+        print "gone, using cached totals, " unless $self->{cfg}->{silent};
+        $$statsref = $stats;
+        $$linesref = $lines;
+        return 'gone';
+    }
+
+    if ($logfile =~ /\.(gz|bz2?|xz)$/) {
+        # Piped through an external decompressor, so it can't be seeked
+        # into - always fully reparsed (but still cached, so it becomes
+        # resumable once decompressed to a plain file, or safely deletable
+        # once it's no longer needed).
+        return undef;
+    }
+
+    return undef if -s $logfile < $stats->{byte_offset}; # truncated/rotated: can't trust a resume
+
+    print "cached, resuming from line " . ($stats->{lines_parsed} + 1) . ", " unless $self->{cfg}->{silent};
     $$statsref = $stats;
     $$linesref = $lines;
 
-    return 1;
+    return 'resume';
 }
 
 sub _update_cache
 {
     my ($self, $stats, $lines, $logfile) = @_;
-    my $csum = (split(' ', `sum -s $logfile`))[0];
     my $cachefile = $logfile;
     $cachefile =~ s/[^\w-]/_/g;
     $cachefile = "$self->{cfg}->{cachedir}/$cachefile";
 
     $stats->{logfile} = $logfile;
-    $stats->{logfile_csum} = $csum;
+    $stats->{version} = $self->{cfg}->{version};
 
     store $stats, "$cachefile.pisgstats";
     store $lines, "$cachefile.pisglines";
@@ -843,7 +899,7 @@ sub _merge_stats
 
     foreach my $key (keys %$s) {
         #print "$key -> $s->{$key}\n";
-        if ($key =~ /^(logfile|firsttime|days|version)/) { # don't merge these
+        if ($key =~ /^(logfile|firsttime|days|version|byte_offset|lines_parsed)/) { # don't merge these
             next;
         } elsif ($key =~ /^(oldtime|lastnick|lastnormal|monocount)$/) { # {key} = int/str: copy
             $stats->{$key} = $s->{$key};

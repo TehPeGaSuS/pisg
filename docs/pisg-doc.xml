@@ -1067,18 +1067,43 @@
     <title>Description</title>
     <para>
     Setting this option makes pisg dump the results of log parsing into cache
-    files. The next time pisg is run, it compares the timestamp of the log(s)
-    with the timestamp stored in the cache file. When the log was not changed,
-    the cached data is used. (This means that it does not work if you only
-    have a single big logfile. Split the log at arbitrary points and use
-    <xref linkend="LogDir" /> or <xref linkend="Logfile" />="dir/*".)
+    files, one pair per logfile. The next time pisg is run against the same
+    logfile, parsing resumes from where it left off instead of starting
+    over: only the lines appended since the last run are read and parsed,
+    and their results are added to the cached totals from before. (This
+    means it does not help with a single, ever-growing logfile in the usual
+    sense of "skip what's unchanged" - but it does mean an actively-appended
+    daily logfile only ever has its new tail parsed, not the whole file
+    again. Splitting logs per day and using <xref linkend="LogDir" /> or
+    <xref linkend="Logfile" />="dir/*" is still recommended, same as
+    without caching.)
+    </para>
+
+    <para>
+    Because parsed logfiles are fully accounted for in the cache, once a
+    logfile has been parsed at least once with CacheDir set, it is safe to
+    delete: on the next run, pisg notices the logfile is gone and falls
+    back to the cached totals instead of erroring, so nothing is lost.
+    Resuming only works for plain (uncompressed) logfiles - a compressed
+    log (.gz/.bz2/.xz) is always fully reparsed on the next run (but is
+    still cached, so it too becomes safe to delete afterwards). If a
+    logfile is found to be smaller than it was last time (truncated,
+    rotated, or replaced), pisg can't trust a resume and does a full
+    reparse instead, exactly as if CacheDir were unset for that file.
     </para>
 
     <para>
     Note that the cache files should be deleted when the pisg config file is
     changed since the cache data uses the old config settings.
     <xref linkend="NickTracking" /> does not work especially well with the
-    cache when using different <xref linkend="NFiles" /> settings.
+    cache when using different <xref linkend="NFiles" /> settings. Also
+    note that <xref linkend="NickTracking" />'s automatic nick-change
+    linking is only ever learned from lines as they're parsed for the
+    first time; if two nicks were linked by a nick-change event in a
+    portion of a log that predates your CacheDir cache, and that portion
+    is never reparsed, the link won't be rediscovered on a later run.
+    Explicit <command>&lt;user nick="..." alias="..."&gt;</command>
+    entries are unaffected and always take priority regardless of caching.
     </para>
     </refsect1>
     <refsect1>
