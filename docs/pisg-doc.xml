@@ -117,13 +117,6 @@
    for your channels, for this please refer to the reference documentation.
    </para>
 
-   <para>
-   Also be-aware of the fact that pisg uses various images to show the
-   time-related bars. These images are placed in the
-   <filename>gfx/</filename> folder and should be placed into the same
-   directory as your outputted HTML file.
-   </para>
-
    </sect1>
    <sect1 id="user-options">
     <title>Specifying user options</title>
@@ -3253,35 +3246,6 @@
   </chapter>
   <chapter id="reference-pictures">
    <title>Picture options</title>
-
-    <!-- *** PICLOCATION *** -->
-    <refentry id="PicLocation">
-
-    <refmeta> <refentrytitle>PicLocation</refentrytitle> </refmeta>
-
-    <refnamediv>
-    <refname>PicLocation</refname>
-    <refpurpose>path to images on stats page</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv><programlisting>
-      <![CDATA[
-        <set PicLocation="gfx/">
-      ]]>
-    </programlisting></refsynopsisdiv>
-
-    <refsect1>
-    <title>Description</title>
-    <para>
-    The location to the pictures used on the stats page - not the user
-    pictures but the different bars in "Most Active Times".
-    </para>
-    </refsect1>
-    <refsect1>
-    <title>Default</title>
-    <para> Current directory </para>
-    </refsect1>
-    </refentry>
 
     <!-- *** USERPICS *** -->
     <refentry id="UserPics">

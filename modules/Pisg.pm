@@ -130,7 +130,6 @@ sub get_default_config_settings
         pic_h_6 => 'green-h',
         pic_h_12 => 'yellow-h',
         pic_h_18 => 'red-h',
-        piclocation => '.',
 
         # Stats settings
 

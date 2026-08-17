@@ -46,10 +46,6 @@ pisg.cfg.
 
 NOTES
 -----
-There is some graphics in the gfx/ folder which pisg uses, you should put
-these in the same directory as your stats file(s) or use the 'PicLocation'
-configuration option.
-
 The stats will look best with a logfile which is at least one day long.
 Some stats (like smilies, exclamation marks, etc) doesn't get counted before
 a special amount of time.
