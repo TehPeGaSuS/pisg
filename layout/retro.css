@@ -1,0 +1,171 @@
+/*
+ * pisg "retro" theme.
+ *
+ * A nod to the original early-2000s pisg look (purple/lavender, Verdana,
+ * beveled table borders) - nostalgic in palette and detailing only.
+ * Same modern, config-free foundation as the other themes: no HiCell/
+ * HiCell2, no base64 sprite backgrounds.
+ */
+
+:root {
+	--bg: #d8d8ec;
+	--fg: #2b2b3c;
+	--muted: #5a5a72;
+	--link: #33339c;
+	--surface: #f4f4fb;
+	--border: #9c9cc0;
+	--head-bg: #666699;
+	--head-fg: #ffffff;
+	--th-bg: #c8c8dd;
+	--row-bg: #f4f4fb;
+	--row-alt-bg: #dcdcee;
+	--hi-bg: #babadd;
+	--rank1-bg: #aaaacc;
+	--male: #0000dd;
+	--female: #dd3366;
+	--bot: #008080;
+	--bar-green: #4caf50;
+	--bar-red: #cc3333;
+	--bar-yellow: #ccaa22;
+	--bar-blue: #3355bb;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--fg);
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.4;
+	margin: 0;
+	padding: 24px 12px;
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.background {
+	color: var(--muted);
+}
+a.background:hover {
+	color: var(--link);
+}
+
+td {
+	font-family: inherit;
+	font-size: 12px;
+	color: var(--fg);
+	text-align: left;
+	padding: 3px 7px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.title {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0 0 4px;
+	color: var(--head-bg);
+}
+
+.subtitle {
+	color: var(--muted);
+	margin: 0 0 16px;
+}
+
+.headlinebg {
+	background-color: #000000;
+	padding: 2px;
+	border: 1px solid #000000;
+}
+
+.headtext {
+	color: var(--head-fg);
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	padding: 5px 10px;
+	background-color: var(--head-bg);
+	border: 1px outset #8888bb;
+}
+
+.tdtop {
+	background-color: var(--th-bg);
+	font-weight: bold;
+	border: 1px solid var(--border);
+}
+
+/* Leaderboard rows: plain CSS zebra striping, see
+   Pisg::HTMLGenerator::generate_colors. */
+.rankcell {
+	background-color: var(--row-bg);
+	border: 1px solid var(--border);
+}
+.rankcell-alt {
+	background-color: var(--row-alt-bg);
+	border: 1px solid var(--border);
+}
+
+.rankc, .rankc10, .rankc10center {
+	background-color: var(--surface);
+	color: var(--muted);
+	text-align: center;
+	border: 1px solid var(--border);
+}
+.rankc10, .rankc10center {
+	font-size: 10px;
+}
+.hirankc, .hirankc10center {
+	background-color: var(--rank1-bg);
+	color: var(--fg);
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid var(--border);
+}
+.hirankc10center {
+	font-size: 10px;
+}
+
+.hicell {
+	background-color: var(--hi-bg);
+	border: 1px solid var(--border);
+}
+
+.male, .male a {
+	color: var(--male);
+}
+.female, .female a {
+	color: var(--female);
+}
+.bot, .bot a {
+	color: var(--bot);
+}
+
+.small {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+}
+.asmall {
+	font-family: "Arial narrow", Arial, sans-serif;
+	font-size: 10px;
+	color: var(--muted);
+	text-align: center;
+}
+
+#footer {
+	color: var(--muted);
+	text-align: center;
+	margin-top: 24px;
+}
+
+#green-h, #green-v { background-color: var(--bar-green); }
+#red-h, #red-v { background-color: var(--bar-red); }
+#yellow-h, #yellow-v { background-color: var(--bar-yellow); }
+#blue-h, #blue-v { background-color: var(--bar-blue); }

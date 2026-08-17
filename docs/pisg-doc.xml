@@ -280,7 +280,7 @@
     There are a few predefined color schemes for you to use, use the
     <xref linkend="ColorScheme" /> option when using them. The
     colorschemes distributed with pisg are: default (which is the default),
-    dark, ocean.
+    dark, ocean, retro.
     </para>
 
     <para>
@@ -747,8 +747,8 @@
     <para>
     <command>ColorScheme</command> is used to define the color scheme used
     for the statistics page. Actually it's the CSS file being included.
-    CSS files distributed with pisg are: dark, default, ocean (omit the
-    .css). The file will be included statically in the generated HTML
+    CSS files distributed with pisg are: dark, default, ocean, retro (omit
+    the .css). The file will be included statically in the generated HTML
     page. If you give a file name or URL (i.e. a color scheme name with
     .css or a path), the file will be linked to instead. Using "none" will
     cause pisg to write only the body of the page; use this to include the
