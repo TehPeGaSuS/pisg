@@ -142,7 +142,7 @@ sub get_default_config_settings
         showwordtime => 0,
         showlines => 1,
         showtime => 1,
-        showwords => 0,
+        showwords => 1,
         showwpl => 0,
         showcpl => 0,
         showlastseen => 1,
@@ -197,7 +197,7 @@ sub get_default_config_settings
         logcharsetfallback => '',
 
         # sorting
-        sortbywords => 0,
+        sortbywords => 1,
 
         # Misc settings
 
