@@ -737,26 +737,11 @@ sub generate_colors
     my $self = shift;
     my $c = shift;
 
-    # if hicell or hicell2 is "", do not print the class as it could mess up the gendercode
-    return "" if not (length $self->{cfg}->{hicell} and length $self->{cfg}->{hicell2});
-
-    my $h = $self->{cfg}->{hicell} or return "class=\"hicell\"";
-    $h =~ s/^#//;
-    $h = hex $h;
-    my $h2 = $self->{cfg}->{hicell2} or return "class=\"hicell\"";
-    $h2 =~ s/^#//;
-    $h2 = hex $h2;
-    my $f_b = $h & 0xff;
-    my $f_g = ($h & 0xff00) >> 8;
-    my $f_r = ($h & 0xff0000) >> 16;
-    my $t_b = $h2 & 0xff;
-    my $t_g = ($h2 & 0xff00) >> 8;
-    my $t_r = ($h2 & 0xff0000) >> 16;
-    my $blue  = sprintf "%0.2x", abs int(((($t_b - $f_b) / $self->{cfg}->{activenicks}) * +$c) + $f_b);
-    my $green  = sprintf "%0.2x", abs int(((($t_g - $f_g) / $self->{cfg}->{activenicks}) * +$c) + $f_g);
-    my $red  = sprintf "%0.2x", abs int(((($t_r - $f_r) / $self->{cfg}->{activenicks}) * +$c) + $f_r);
-
-    return "style=\"background-color: #$red$green$blue\"";
+    # Zebra-stripe the leaderboard rows. This used to require a gradient
+    # computed from user-set HiCell/HiCell2 config colors (and did nothing
+    # at all if they were left unset); themes now handle striping entirely
+    # via the .rankcell/.rankcell-alt CSS classes, no config needed.
+    return $c % 2 ? 'class="rankcell"' : 'class="rankcell-alt"';
 }
 
 sub _html

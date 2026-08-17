@@ -280,7 +280,7 @@
     There are a few predefined color schemes for you to use, use the
     <xref linkend="ColorScheme" /> option when using them. The
     colorschemes distributed with pisg are: default (which is the default),
-    darkgalaxy, darkred, justgrey, ocean, orange_grey, pisg, softgreen.
+    dark, ocean.
     </para>
 
     <para>
@@ -734,7 +734,7 @@
       <![CDATA[
         <channel="#channel">
          Logfile = "channel.log"
-         ColorScheme = "darkgalaxy"
+         ColorScheme = "dark"
          Maintainer = "John"
         </channel>
 
@@ -747,14 +747,13 @@
     <para>
     <command>ColorScheme</command> is used to define the color scheme used
     for the statistics page. Actually it's the CSS file being included.
-    CSS files distributed with pisg are: darkgalaxy, darkred, default,
-    justgrey, ocean, orange_grey, pisg, softgreen (omit the .css). The file
-    will be included statically in the generated HTML page. If you give a file
-    name or URL (i.e. a color scheme name with .css or a path), the file will
-    be linked to instead. Using "none" will cause pisg to write only the body
-    of the page; use this to include the statistics into a custom page. See
-    also <xref linkend="CssDir" />, <xref linkend="AltColorScheme" />,
-    <link linkend="HiCell">HiCell/HiCell2</link>.
+    CSS files distributed with pisg are: dark, default, ocean (omit the
+    .css). The file will be included statically in the generated HTML
+    page. If you give a file name or URL (i.e. a color scheme name with
+    .css or a path), the file will be linked to instead. Using "none" will
+    cause pisg to write only the body of the page; use this to include the
+    statistics into a custom page. See also <xref linkend="CssDir" />,
+    <xref linkend="AltColorScheme" />.
     </para>
     </refsect1>
     <refsect1>
@@ -777,12 +776,12 @@
       <![CDATA[
         <channel="#channel">
          Logfile = "channel.log"
-         ColorScheme = "darkgalaxy"
+         ColorScheme = "dark"
          AltColorScheme = "layout/ocean.css"
          Maintainer = "John"
         </channel>
 
-        <set AltColorScheme="layout/darkgalaxy.css layout/justgrey.css">
+        <set AltColorScheme="layout/dark.css layout/ocean.css">
       ]]>
     </programlisting></refsynopsisdiv>
 
@@ -3747,38 +3746,9 @@
     </refentry>
 
     <!-- *** HICELL *** -->
-    <refentry id="HiCell">
-
-    <refmeta> <refentrytitle>HiCell, HiCell2</refentrytitle> </refmeta>
-
-    <refnamediv>
-    <refname>HiCell, HiCell2</refname>
-    <refpurpose>colors for color gradient in most active nicks section</refpurpose>
-    </refnamediv>
-
-    <refsynopsisdiv><programlisting>
-      <![CDATA[
-        <set HiCell="#BABADD" HiCell2="#CCCCCC">
-        <set HiCell="">
-      ]]>
-    </programlisting></refsynopsisdiv>
-
-    <refsect1>
-    <title>Description</title>
-    <para>
-    <command>HiCell</command> and <command>HiCell2</command> define the colors
-    to be used for the color gradient in the most active nicks section. They should
-    match your <xref linkend="ColorScheme" />. When setting
-    <command>HiCell</command> the empty string (""), pisg will not generate a color
-    gradient; you might want to use this with <xref linkend="ColorScheme" />="none"
-    or <xref linkend="AltColorScheme" />.
-    </para>
-    </refsect1>
-    <refsect1>
-    <title>Default</title>
-    <para> #BABADD, #CCCCCC </para>
-    </refsect1>
-    </refentry>
+    <!-- HiCell/HiCell2 were removed: leaderboard row striping is now
+         handled entirely by the .rankcell/.rankcell-alt CSS classes in
+         each theme, no configuration required. -->
 
     <!-- *** LOGTYPE *** -->
     <refentry id="LogType">

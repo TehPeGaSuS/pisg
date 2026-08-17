@@ -1,32 +1,30 @@
 /*
- * pisg "default" theme - clean light theme.
+ * pisg "dark" theme.
  *
- * No configuration required: activity-chart bar colors and leaderboard
- * row striping are plain CSS below, not computed from HiCell/HiCell2/
- * base64 sprite images like the old themes required.
+ * Replaces the old darkred/darkgalaxy themes. No configuration required.
  */
 
 :root {
-	--bg: #f3f4f8;
-	--fg: #23262d;
-	--muted: #6b7280;
-	--link: #2a5fac;
-	--surface: #ffffff;
-	--border: #dfe2ea;
-	--head-bg: #2a3550;
-	--head-fg: #ffffff;
-	--th-bg: #e4e7f2;
-	--row-bg: #ffffff;
-	--row-alt-bg: #eef0f8;
-	--hi-bg: #ffffff;
-	--rank1-bg: #dbe2f5;
-	--male: #2f5fc4;
-	--female: #c23b73;
-	--bot: #0f9aa8;
+	--bg: #14161c;
+	--fg: #dfe2ea;
+	--muted: #8991a3;
+	--link: #7ba6ff;
+	--surface: #1b1e27;
+	--border: #2b2f3b;
+	--head-bg: #262b3a;
+	--head-fg: #f0f2f7;
+	--th-bg: #232733;
+	--row-bg: #1b1e27;
+	--row-alt-bg: #20232e;
+	--hi-bg: #1b1e27;
+	--rank1-bg: #333950;
+	--male: #7ba6ff;
+	--female: #ff8fb8;
+	--bot: #4fd8d8;
 	--bar-green: #4caf7d;
-	--bar-red: #e05656;
+	--bar-red: #e0605e;
 	--bar-yellow: #e0b34f;
-	--bar-blue: #4c7ce0;
+	--bar-blue: #5a8ef0;
 }
 
 body {
@@ -97,8 +95,6 @@ table {
 	border-bottom: 2px solid var(--border);
 }
 
-/* Leaderboard rows: zebra striping is now purely CSS, see
-   Pisg::HTMLGenerator::generate_colors. */
 .rankcell {
 	background-color: var(--row-bg);
 	border-bottom: 1px solid var(--border);
@@ -126,8 +122,6 @@ table {
 	font-size: 11px;
 }
 
-/* Generic highlighted content cell, used throughout for trivia/word/url
-   listing tables. */
 .hicell {
 	background-color: var(--hi-bg);
 	border-bottom: 1px solid var(--border);
@@ -159,8 +153,6 @@ table {
 	margin-top: 24px;
 }
 
-/* Activity-by-hour bar chart segments. These used to be tiled 1px
-   base64-encoded PNG sprites; flat colors do the same job. */
 #green-h, #green-v { background-color: var(--bar-green); }
 #red-h, #red-v { background-color: var(--bar-red); }
 #yellow-h, #yellow-v { background-color: var(--bar-yellow); }

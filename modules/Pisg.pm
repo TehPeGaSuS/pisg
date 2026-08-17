@@ -119,9 +119,6 @@ sub get_default_config_settings
 
         # Colors / Layout
 
-        hicell => '#BABADD', # FIXME 
-        hicell2 => '#CCCCCC', # FIXME
-
         picwidth => '',
         picheight => '',
 
