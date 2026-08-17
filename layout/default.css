@@ -161,7 +161,10 @@ table {
 
 /* Activity-by-hour bar chart segments. These used to be tiled 1px
    base64-encoded PNG sprites; flat colors do the same job. */
-#green-h, #green-v { background-color: var(--bar-green); }
-#red-h, #red-v { background-color: var(--bar-red); }
-#yellow-h, #yellow-v { background-color: var(--bar-yellow); }
-#blue-h, #blue-v { background-color: var(--bar-blue); }
+.bar-h, .bar-v { display: inline-block; }
+.bar-h { height: 15px; vertical-align: middle; }
+.bar-v { width: 15px; vertical-align: bottom; }
+.green-h, .green-v { background-color: var(--bar-green); }
+.red-h, .red-v { background-color: var(--bar-red); }
+.yellow-h, .yellow-v { background-color: var(--bar-yellow); }
+.blue-h, .blue-v { background-color: var(--bar-blue); }
