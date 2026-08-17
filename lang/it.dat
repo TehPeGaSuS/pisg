@@ -64,7 +64,7 @@ words1 = "<b>[:nick]</b> ha detto un totale di [:words] parole!"
 words2 = "Il fedele seguace di [:oldnick], <b>[:nick]</b>, non parla così tanto: [:words] parole."
 words3 = "Nessuno ha detto nulla... Che strano canale..."
 
-mono1 = "<b>[:nick]</b> parla con sè un bel po'.  Ha scritto più di 5 linee di fila [:monos] volte!"
+mono1 = "<b>[:nick]</b> parla con sè un bel po'. Ha scritto più di 5 linee di fila [:monos] volte!"
 mono2 = "Un'altro solitario è <b>[:nick]</b>, che è riuscito a raggiungere le [:monos] volte."
 
 wpl1 = "<b>[:nick]</b> ha scritto una media di [:wpl] parole per linea."

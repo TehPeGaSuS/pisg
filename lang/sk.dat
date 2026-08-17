@@ -38,10 +38,10 @@ shout3 = "Nikdo tu nekrièal, wow :)."
 
 allcaps1 = "Vyzerá, e <b>[:nick]</b> mal[::a:] stlaèenı CAPS LOCK [:per]% èasu."
 allcaps2 = "<b>[:nick]</b> tie zabud[:ol:la:] vypnú svoj Caps-Lock. Písal[::a:] VELKİM [:per]% èasu."
-allcaps3 = "Všetci mali svoj shift pod kontrolou.  :)"
+allcaps3 = "Všetci mali svoj shift pod kontrolou. :)"
 allcapstext = "<b>Napríklad:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-violent1 = "<b>[:nick]</b> je ve¾mi agresívna osoba.  Zaútoèil[::a:] <b>[:attacks]</b>x na ostatnıch."
+violent1 = "<b>[:nick]</b> je ve¾mi agresívna osoba. Zaútoèil[::a:] <b>[:attacks]</b>x na ostatnıch."
 violent2 = "<b>[:nick]</b> tie neovláda svoju agresiu. Napad[:ol:la:] ostatnıch <b>[:attacks]</b>x ."
 violent3 = "Tu sa teda majú radi :)."
 violenttext = "<b>Napríklad, ako toto:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
@@ -54,7 +54,7 @@ gotkick1 = "<b>[:nick]</b> nie je ve¾mi populárn[:y:a:]. Bol[::a:] vykopnut[:ı:á
 gotkick2 = "<b>[:nick]</b> vyzerá ako by [:ho:ju:] tie nemali radi. Dostal kick [:kicks]x ."
 kicktext = "<b>Napríklad takto:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-joins = "<b>[:nick]</b> je dos nerozhodn[:ı:á:].  Prišiel[::a:] na kanál [:joins]x !"
+joins = "<b>[:nick]</b> je dos nerozhodn[:ı:á:]. Prišiel[::a:] na kanál [:joins]x !"
 
 kick1 = "<b>[:nick]</b> je trošku vystresovan[:ı:á:], alebo len ve¾mi spravodliv[:ı:á:] op. Vyhodil[::a:] celkom [:kicked] ¾udí!"
 kick2 = "[:nick] je vern[:ı:á:] následovní[:k:èka:]. Vykop[:ol:la:] [:kicked] ¾udí."
@@ -80,13 +80,13 @@ foul1 = "Štatistiku nevymáchanıch húb vedie <b>[:nick]</b>. [:per]% nadávok na r
 foul2 = "<b>[:nick]</b> ma tie celkom drsnı slovník. [:per]% zo zaznamenaného cyklu."
 foul3 = "Nikdo si neotváral ústa na [:channel]? Nepreháòajte to!"
 
-smiles1 = "<b>[:nick]</b> prináša rados do ivota.  [:per]% riadkov obsahuje smajlík :)"
+smiles1 = "<b>[:nick]</b> prináša rados do ivota. [:per]% riadkov obsahuje smajlík :)"
 smiles2 = "<b>[:nick]</b> tie nemôe by smutn[:ı:á:]. Usmieva sa v [:per]% riadkov."
 smiles3 = "Nikto se na [:channel] nesmeje! Sıııııııır! :)"
 
 sad1 = "<b>[:nick]</b> vyzerá nešastne: [:per]% riadkov obsahuje smutnı xixtiq :("
 sad2 = "<b>[:nick]</b> je tie nešastná osoba, preplaèe [:per]% èasu."
-sad3 = "Nikto nieje nešastnı na [:channel]!  Hmm... "
+sad3 = "Nikto nieje nešastnı na [:channel]! Hmm... "
 
 month = "januára februára marca apríla mája júna júla augusta septembra októbra novembra decembra"
 day = "Nede¾u Pondelok Utorok Stredu Štvrtok Piatok Sobotu"

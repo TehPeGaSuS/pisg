@@ -33,7 +33,7 @@ allcaps2 = "<b>[:nick]</b> gleymdi að taka Caps-Lock af hjá sér. [:Hann:Hún:] sk
 allcaps3 = "Allir höfðu stjórn á shift takkanum sínum."
 allcapstext = "<b>Til dæmis svona:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-violent1 = "<b>[:nick]</b> er mjög árásargjarn.  [:Hann:Hún:] réðst á aðra <b>[:attacks]</b> sinnum."
+violent1 = "<b>[:nick]</b> er mjög árásargjarn. [:Hann:Hún:] réðst á aðra <b>[:attacks]</b> sinnum."
 violent2 = "<b>[:nick]</b> getur ekki stjórnað árásargirni sinni heldur. [:Hann:Hún:] réðst á aðra <b>[:attacks]</b> sinnum."
 violent3 = "Enginn réðst á neinn, allir voru vinir."
 violenttext = "<b>Til dæmis svona:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
@@ -72,13 +72,13 @@ foul1 = "<b>[:nick]</b> kunni öll dónalegu orðin. [:per]% af línum [:hans:hennar
 foul2 = "<b>[:nick]</b> kann líka fúkyrðin, [:per]% af línum [:hans:hennar:] innhéldu fúkyrði."
 foul3 = "Enginn hefur sagt eitthvað slæmt á [:channel]!"
 
-smiles1 = "<b>[:nick]</b> færir heiminum hamingju. [:per]% af línum [:hans:hennar:] innihéldu broskalla.  :)"
+smiles1 = "<b>[:nick]</b> færir heiminum hamingju. [:per]% af línum [:hans:hennar:] innihéldu broskalla. :)"
 smiles2 = "<b>[:nick]</b> er heldur ekki fúll, brosandi [:per]% af tímanum."
-smiles3 = "Enginn brosir á [:channel]!  Svona nú allir að fara að brosa."
+smiles3 = "Enginn brosir á [:channel]! Svona nú allir að fara að brosa."
 
-sad1 = "<b>[:nick]</b> virðist þjást af þunglyndi:  [:per]% af línum [:hans:hennar:] innihéldu fýlukarla.  :("
+sad1 = "<b>[:nick]</b> virðist þjást af þunglyndi: [:per]% af línum [:hans:hennar:] innihéldu fýlukarla. :("
 sad2 = "<b>[:nick]</b> er líka mjög leiður, fúll [:per]% af tímanum."
-sad3 = "Enginn er fýldur á [:channel]!  En hvað þetta er glaðleg rás.  :-)"
+sad3 = "Enginn er fýldur á [:channel]! En hvað þetta er glaðleg rás. :-)"
 
 month = "Janúar Febrúar Mars Apríl Maí Júní Júlí Ágúst September Október Nóvember Desember"
 +day = "sunnudaginn mánudaginn þriðjudaginn miðvikudaginn fimmtudaginn föstudaginn laugardaginn"

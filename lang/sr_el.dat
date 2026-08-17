@@ -36,7 +36,7 @@ shout1 = "Najglasniji je bio <b>[:nick]</b>, koji je vikao [:per]% vremena prove
 shout2 = "Drugi <i>galamdžija</i> je bio <b>[:nick]</b>, koji je vikao [:per]% vremena provedenog na kanalu!"
 shout3 = "Niko nije bio glasan."
 
-allcaps1 = "Izgleda da se <b>[:nick]</b>-u zaglavio šift:  [:per]% vremena je pisao VELIKIM SLOVIMA."
+allcaps1 = "Izgleda da se <b>[:nick]</b>-u zaglavio šift: [:per]% vremena je pisao VELIKIM SLOVIMA."
 allcaps2 = "<b>[:nick]</b> je zaboravio da ugasi [:his:her:] Caps-Lock. Kucao je VELIKIM SLOVIMA [:per]% vremena provedenog na kanalu."
 allcaps3 = "Svi su imali svoju šift tipku pod kontrolom  :)"
 allcapstext = "<b>Na primer:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
@@ -54,7 +54,7 @@ gotkick1 = "<b>[:nick]</b> nije bio baš popularan, izbačen je sa kanala [:kick
 gotkick2 = "Mrzeli su i korisnika <b>[:nick]</b>. Izbačen je [:kicks] puta."
 kicktext = "<b>Kao na primer:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-joins = "<b>[:nick]</b> nije mogao da se odluči da li da ostane ili da ode.  [:joins] puta je ušao na kanal!"
+joins = "<b>[:nick]</b> nije mogao da se odluči da li da ostane ili da ode. [:joins] puta je ušao na kanal!"
 
 kick1 = "<b>[:nick]</b> je ili lud ili samo fer. Izbacio je samo [:kicked] korisnika!"
 kick2 = "Verni pratilac statusa operatora [:oldnick],  <b>[:nick]</b>, kikovao je [:kicked] korisnika."
@@ -62,7 +62,7 @@ kick3 = "Ovde su opovi divni. Niko nije kikovan!"
 
 words1 = "<b>[:nick]</b> je rekao ukupno [:words] reči!"
 words2 = "Verni pratilac korisnika [:oldnick], <b>[:nick]</b>, takođe ne priča mnogo: samo [:words] reči."
-words3 = "Niko ništa nije rekao...  Zaista čudan kanal..."
+words3 = "Niko ništa nije rekao... Zaista čudan kanal..."
 
 mono1 = "<b>[:nick]</b> je pričao sam sa sobom. [:monos] puta je ispisao više od 5 redova uzastopno!"
 mono2 = "Takođe usamljen bio je i <b>[:nick]</b>. Vodio je monolog [:monos] puta."
@@ -76,7 +76,7 @@ long2 = "Na [:channel] prosečno je pisano [:avg] slova po redu."
 short1 = "<b>[:nick]</b> je pisao najkraće redove sa prosečno [:letters] slova."
 short2 = "<b>[:nick]</b> je takođe držao usta zatvorena. Prosečno [:letters] ispisanih slova."
 
-foul1 = "<b>[:nick]</b> baš voli da psuje.  [:per]% onoga što je pisao su bile psovke! Sram te bilo!"
+foul1 = "<b>[:nick]</b> baš voli da psuje. [:per]% onoga što je pisao su bile psovke! Sram te bilo!"
 foul2 = "<b>[:nick]</b> je takođe psovao [:per]% vremena provedenog na kanalu."
 foul3 = "Niko nije psovao na [:channel]! :-)) Kakvi su to ljudi?"
 foultext = "<b>Kao na primer:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"

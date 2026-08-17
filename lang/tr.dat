@@ -52,7 +52,7 @@ attacked2 = "<b>[:nick]</b> de cok sevilmiyor. Tam <b>[:attacks]</b> defa tokatl
 attackedtext = "<b>Mesela:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 gotkick1 = "<b>[:nick]</b> pek sevilmiyor. [:kicks] kere kanaldan atildi!"
-gotkick2 = "<b>[:nick]</b> de sevilenlerden degil:  [:kicks] defa kanaldan atildi."
+gotkick2 = "<b>[:nick]</b> de sevilenlerden degil: [:kicks] defa kanaldan atildi."
 kicktext = "<b>Mesela:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 joins = "<b>[:nick]</b> kalmak ya da gitmek arasinda tercih yapamadi. [:joins] kere giris/cikis yapti!"

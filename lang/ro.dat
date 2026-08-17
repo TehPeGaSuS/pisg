@@ -29,7 +29,7 @@ action3 = "No actions in [:channel]!"
 actiontext = "<b>De exemplu:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 question1 = "E <b>[:nick]</b> nestiutor, sau pune prea multe intrebari? [:per]% din liniile sale contin o intrebare!"
-question2 = "Nici <b>[:nick]</b> nu stie prea multe.  [:per]% din liniile sale au fost intrebari."
+question2 = "Nici <b>[:nick]</b> nu stie prea multe. [:per]% din liniile sale au fost intrebari."
 question3 = "Nimeni nu a intrebat nimic pe canal."
 
 shout1 = "Recordul la exclamatii e detinut de <b>[:nick]</b>: [:per]% !"
@@ -37,12 +37,12 @@ shout2 = "Alt excitat a fost <b>[:nick]</b>, care a strigat doar [:per]% din tim
 shout3 = "Nimeni nu a strigat, wow."
 
 allcaps1 = "Se pare ca tasta SHIFT a lui <b>[:nick]</b> e blocata: [:per]% din linii le-a scris cu LITERE MARI!"
-allcaps2 = "<b>[:nick]</b> a uitat sa-si dezactiveze Caps-Lockul.  A scris doar [:per]% din linii cu CAPS."
+allcaps2 = "<b>[:nick]</b> a uitat sa-si dezactiveze Caps-Lockul. A scris doar [:per]% din linii cu CAPS."
 allcaps3 = "Nimeni n-a scris cu litere mari."
 allcapstext = "<b>De exemplu:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 
-violent1 = "<b>[:nick]</b> e o persoana foarte agresiva.  I-a atacat pe altii de <b>[:attacks]</b> ori."
+violent1 = "<b>[:nick]</b> e o persoana foarte agresiva. I-a atacat pe altii de <b>[:attacks]</b> ori."
 violent2 = "Nici <b>[:nick]</b> nu se poate controla. <b>[:attacks]</b> atacuri."
 violent3 = "Nimeni n-a batut pe nimeni. Toata lumea a fost pasnica!"
 violenttext = "<b>De exemplu:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
@@ -77,7 +77,7 @@ long2 = "Media canalului [:channel] a fost de [:avg] litere pe linie."
 short1 = "<b>[:nick]</b> a scris cele mai scurte linii: [:letters] litere pe linie."
 short2 = "<b>[:nick]</b> scrie la fel de putin, co u medie de [:letters] caractere."
 
-foul1 = "<b>[:nick]</b> are o gura cam spurcata.  [:per]% din liniile sale contin obscenitati."
+foul1 = "<b>[:nick]</b> are o gura cam spurcata. [:per]% din liniile sale contin obscenitati."
 foul2 = "<b>[:nick]</b> vorbeste ca birjarii doar [:per]% din timp."
 foul3 = "Nimeni nu vorbeste urat pe canal! Sunteti sanatosi?!"
 
@@ -85,9 +85,9 @@ smiles1 = "<b>[:nick]</b> aduce fericire in lume. Zambeste in [:per]% din linii 
 smiles2 = "Nici <b>[:nick]</b> nu e o persoana trista, zambind [:per]% din timp."
 smiles3 = "Nimeni n-a zambit."
 
-sad1 = "<b>[:nick]</b> pare sa fie trist(a):  [:per]% din linii contin ':('"
+sad1 = "<b>[:nick]</b> pare sa fie trist(a): [:per]% din linii contin ':('"
 sad2 = "<b>[:nick]</b> e la fel de trist(a) [:per]% din timp."
-sad3 = "Nimeni nu e trist pe [:channel]!  Ce canal fericit.  :-)"
+sad3 = "Nimeni nu e trist pe [:channel]! Ce canal fericit. :-)"
 
 month = "Ianuarie Februarie Martie Aprilie Mai Iunie Iulie August Septembrie Octombrie Noiembrie Decembrie"
 day = "Duminica Luni Marti Miercuri Joi Vineri Sambata"

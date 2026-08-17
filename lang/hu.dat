@@ -36,7 +36,7 @@ shout1 = "A leghangosabb <b>[:nick]</b> volt, [:per]%-ban kiabalt!"
 shout2 = "A masik <i>nagyhangu</i> <b>[:nick]</b> volt, aki [:per]%-ban volt hangos!"
 shout3 = "Senki sem kiabalt."
 
-allcaps1 = "Ugy tunik <b>[:nick]</b> shift-gombja beragadt:  [:per]%-ban NAGY BETUVEL irt."
+allcaps1 = "Ugy tunik <b>[:nick]</b> shift-gombja beragadt: [:per]%-ban NAGY BETUVEL irt."
 allcaps2 = "<b>[:nick]</b> is elfelejtette neha kikapcsoli a Caps-Lockot. [:per]%-ban NAGYBETUZOTT."
 allcaps3 = "Mindenki ugyelt a shiftre."
 allcapstext = "<b>Peldaul:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"

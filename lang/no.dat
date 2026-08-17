@@ -28,31 +28,31 @@ action2 = "<b>[:nick]</b> forteller oss også hva som skjer med [:actions] action
 action3 = "Ingen action på [:channel]!"
 actiontext = "<b>For eksempel slik:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-question1 = "Er <b>[:nick]</b> dum, eller stiller [:han:hun:] bare mange spørsmål?  [:per]% linjer med spørsmål!"
-question2 = "<b>[:nick]</b> spør også mye.  [:per]% av [:hans:hennes:] linjer er spørsmål!" 
+question1 = "Er <b>[:nick]</b> dum, eller stiller [:han:hun:] bare mange spørsmål? [:per]% linjer med spørsmål!"
+question2 = "<b>[:nick]</b> spør også mye. [:per]% av [:hans:hennes:] linjer er spørsmål!" 
 question3 = "Ingen på denne kanalen stillte spørsmål. Jøss."
 
 shout1 = "Den mest bråkete er <b>[:nick]</b>, som bråkte [:per]% av tiden!"
 shout2 = "En annen <i>bråkmaker</i> er <b>[:nick]</b>, som skrek [:per]% av tiden!"
 shout3 = "Ingen bråker på denne kanalen."
 
-allcaps1 = "Det ser ut som <b>[:nick]</b>s shift-tast henger:  [:per]% av tiden skrev [:han:hun:]  STORE BOKSTAVER."
-allcaps2 = "<b>[:nick]</b> glemte nok å skru av Caps-Lock.  [:Han:Hun:] skrev STORE BOKSTAVER [:per]% av tiden."
-allcaps3 = "Alle hadde caps lock under kontroll. Kjekt.  :)"
+allcaps1 = "Det ser ut som <b>[:nick]</b>s shift-tast henger: [:per]% av tiden skrev [:han:hun:]  STORE BOKSTAVER."
+allcaps2 = "<b>[:nick]</b> glemte nok å skru av Caps-Lock. [:Han:Hun:] skrev STORE BOKSTAVER [:per]% av tiden."
+allcaps3 = "Alle hadde caps lock under kontroll. Kjekt. :)"
 allcapstext = "<b>For eksempel slik:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 
-violent1 = "<b>[:nick]</b> er en aggressiv person.  [:Han:Hun:] angrep andre <b>[:attacks]</b> ganger."
-violent2 = "<b>[:nick]</b> kan heller ikke kontrollere sin aggresjon.  [:Han:Hun:] plaget andre <b>[:attacks]</b> ganger."
-violent3 = "Ingen slår hverandre.  Alle er vennlige."
+violent1 = "<b>[:nick]</b> er en aggressiv person. [:Han:Hun:] angrep andre <b>[:attacks]</b> ganger."
+violent2 = "<b>[:nick]</b> kan heller ikke kontrollere sin aggresjon. [:Han:Hun:] plaget andre <b>[:attacks]</b> ganger."
+violent3 = "Ingen slår hverandre. Alle er vennlige."
 violenttext = "<b>For eksempel slik:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-attacked1 = "Stakkars <b>[:nick]</b>, ingen liker [:ham:henne:].  [:Han:Hun:] ble angrepet <b>[:attacks]</b> ganger."
-attacked2 = "<b>[:nick]</b> er heller ikke likt.  [:Han:Hun:] ble banket <b>[:attacks]</b> ganger."
+attacked1 = "Stakkars <b>[:nick]</b>, ingen liker [:ham:henne:]. [:Han:Hun:] ble angrepet <b>[:attacks]</b> ganger."
+attacked2 = "<b>[:nick]</b> er heller ikke likt. [:Han:Hun:] ble banket <b>[:attacks]</b> ganger."
 attackedtext = "<b>For eksempel slik:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 gotkick1 = "<b>[:nick]</b> er ikke veldig populær og ble kastet ut [:kicks] ganger!"
-gotkick2 = "<b>[:nick]</b> er heller ikke populær:  [:kicks] kicks er notert."
+gotkick2 = "<b>[:nick]</b> er heller ikke populær: [:kicks] kicks er notert."
 kicktext = "<b>For eksempel slik:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 joins = "<b>[:nick]</b> klarte ikke bestemme seg helt -  [:joins] joins i denne perioden!"
@@ -77,18 +77,18 @@ long2 = "[:channel]s gjennomsnitt er [:avg] bokstaver pr linje."
 short1 = "<b>[:nick]</b> skrev de korteste linjene, gjennomsnittlig [:letters] bokstaver pr. linje."
 short2 = "<b>[:nick]</b> er også en person av få ord - [:letters] bokstaver pr. linje i gjennomsnitt."
 
-foul1 = "<b>[:nick]</b> må snart vaske munnen sin.  [:per]% av linjene inneholdt stygt språk."
+foul1 = "<b>[:nick]</b> må snart vaske munnen sin. [:per]% av linjene inneholdt stygt språk."
 foul2 = "<b>[:nick]</b> er heller ikke svigermors drøm, [:per]% av tiden."
 foul3 = "Ingen prater stygt på [:channel]!?!"
 foultext = "<b>For eksempel slik:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-smiles1 = "<b>[:nick]</b> bringer lykke til verden.  [:per]% av [:hans:hennes:] linjer inneholdt smileansikt. :-)"
-smiles2 = "<b>[:nick]</b> er heller ikke særlig sur.  [:per]% av [:hans:hennes:] linjer inneholdt et smil."
-smiles3 = "Ingen smiler på [:channel]!  :-("
+smiles1 = "<b>[:nick]</b> bringer lykke til verden. [:per]% av [:hans:hennes:] linjer inneholdt smileansikt. :-)"
+smiles2 = "<b>[:nick]</b> er heller ikke særlig sur. [:per]% av [:hans:hennes:] linjer inneholdt et smil."
+smiles3 = "Ingen smiler på [:channel]! :-("
 
-sad1 = "<b>[:nick]</b> er trist for øyeblikket:  [:per]% linjer inneholdt :(!"
+sad1 = "<b>[:nick]</b> er trist for øyeblikket: [:per]% linjer inneholdt :(!"
 sad2 = "<b>[:nick]</b> er heller ikke særlig blid. [:per]% av tiden."
-sad3 = "Ingen er triste på [:channel]!  For en koselig kanal.  :-)"
+sad3 = "Ingen er triste på [:channel]! For en koselig kanal. :-)"
 
 month = "januar februar mars april may juni juli august september oktober november desember"
 day = "søndag mandag tirsdag onsdag torsdag fredag lørdag"

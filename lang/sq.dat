@@ -28,33 +28,33 @@ action2 = "Gjithashtu, <b>[:nick]</b> na tregon çfarë bën me [:actions] veprime.
 action3 = "Asnjë veprim në [:channel]!"
 actiontext = "<b>Përshembull, si ky:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-question1 = "A është <b>[:nick]</b> budalla apo vetëm pyet?  [:per]% e rreshtave përmbanin një pyetje!"
-question2 = "<b>[:nick]</b> nuk dinte kush e di se çfarë as ai.  [:per]% e rreshtave të tij/saj ishin pyetje."
+question1 = "A është <b>[:nick]</b> budalla apo vetëm pyet? [:per]% e rreshtave përmbanin një pyetje!"
+question2 = "<b>[:nick]</b> nuk dinte kush e di se çfarë as ai. [:per]% e rreshtave të tij/saj ishin pyetje."
 question3 = "Asnjëri nuk bëri pyetje këtu; a thua janë të gjithë gjeni në këtë kanal?"
 
 shout1 = "Ai që bërtiste më shumë ishte <b>[:nick]</b>, që ulëriti [:per]% të kohës!"
 shout2 = "Një tjetër<i>gërthitës</i> ishte <b>[:nick]</b>, ulëriti [:per]% të kohës!"
 shout3 = "Wow, asnjë nuk bërtiti."
 
-allcaps1 = "Më duket se tasti Shift i <b>[:nick]</b> ka ngecur:  [:per]% të kohës së [:tij:saj:] shkruajti me GËRMA TË MËDHA."
-allcaps2 = "<b>[:nick]</b> vetëm sa harroi të çaktivizojë Caps-Lock e [:tij:saj:].  [:Ai:Ajo:] shkruajti ME TË MADHE [:per]% të kohës."
-allcaps3 = "Të gjithë e kishin nën kontroll tastin Caps-Lock.  :)"
+allcaps1 = "Më duket se tasti Shift i <b>[:nick]</b> ka ngecur: [:per]% të kohës së [:tij:saj:] shkruajti me GËRMA TË MËDHA."
+allcaps2 = "<b>[:nick]</b> vetëm sa harroi të çaktivizojë Caps-Lock e [:tij:saj:]. [:Ai:Ajo:] shkruajti ME TË MADHE [:per]% të kohës."
+allcaps3 = "Të gjithë e kishin nën kontroll tastin Caps-Lock. :)"
 allcapstext = "<b>Përshembull, si kjo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-violent1 = "<b>[:nick]</b> është një person i dhunshëm.  [:Ai:Ajo:] sulmoi të tjerët <b>[:attacks]</b> herë."
-violent2 = "Sido që të jetë, edhe <b>[:nick]</b> nuk i kontrollon dot sulmet e [:tij:saj:].  [:Ai:Ajo:] ngacmoi të tjerët <b>[:attacks]</b> herë."
+violent1 = "<b>[:nick]</b> është një person i dhunshëm. [:Ai:Ajo:] sulmoi të tjerët <b>[:attacks]</b> herë."
+violent2 = "Sido që të jetë, edhe <b>[:nick]</b> nuk i kontrollon dot sulmet e [:tij:saj:]. [:Ai:Ajo:] ngacmoi të tjerët <b>[:attacks]</b> herë."
 violent3 = "Asnjëri nuk ngacmoi të tjerët. Çdokush qe miqësor."
 violenttext = "<b>Përshembull, si kjo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 attacked1 = "I gjori <b>[:nick]</b>, asnjëri nuk e pëlqen. [:Ai:Ajo:] u sulmua <b>[:attacks]</b> herë."
-attacked2 = "<b>[:nick]</b> ngjan të jetë i padëshiruar gjithashtu.  [:Ai:Ajo:] u ngacmua <b>[:attacks]</b> herë."
+attacked2 = "<b>[:nick]</b> ngjan të jetë i padëshiruar gjithashtu. [:Ai:Ajo:] u ngacmua <b>[:attacks]</b> herë."
 attackedtext = "<b>Përshembull, si kjo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 gotkick1 = "<b>[:nick]</b> nuk qe shumë popullor, mori shqelma(kicked) [:kicks] herë!"
-gotkick2 = "<b>[:nick]</b> ngjan të ketë qenë i urryer gjithashtu:  mori [:kicks] dëbime."
+gotkick2 = "<b>[:nick]</b> ngjan të ketë qenë i urryer gjithashtu: mori [:kicks] dëbime."
 kicktext = "<b>Përshembull, si ky:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-joins = "<b>[:nick]</b> nuk dinte ç'të bënte, të ikte apo të rrinte.  [:joins] hyrje të raportuara në këtë periudhë!"
+joins = "<b>[:nick]</b> nuk dinte ç'të bënte, të ikte apo të rrinte. [:joins] hyrje të raportuara në këtë periudhë!"
 
 kick1 = "<b>[:nick]</b> është një OP i çmendur(apo vetëm i drejtë?), ka përzënë [:kicked] person/a!"
 kick2 = "<b>[:nick]</b> e ndjek pas, zboi [:kicked] person/a."
@@ -62,9 +62,9 @@ kick3 = "Paska operatorë të mirë këtu, asnjëri nuk ka marrë shqelma!"
 
 words1 = "<b>[:nick]</b> shkruajti një total prej [:words] fjalësh!"
 words2 = "<b>[:nick]</b> e ndjek pas, nuk foli dhe aq shume: [:words] fjalë."
-words3 = "Asnjeri nuk foli...  Kanal i çuditshëm..."
+words3 = "Asnjeri nuk foli... Kanal i çuditshëm..."
 
-mono1 = "<b>[:nick]</b> flet shumë me vetveten.  [:Ai:Ajo:] shkruajti mbi 5 herë nga një rresht [:monos] herë!"
+mono1 = "<b>[:nick]</b> flet shumë me vetveten. [:Ai:Ajo:] shkruajti mbi 5 herë nga një rresht [:monos] herë!"
 mono2 = "Një i vetmuar tjetër ishte <b>[:nick]</b>, që qëlloi të fliste vetëm [:monos] herë."
 
 wpl1 = "<b>[:nick]</b> shkruajti mesatarisht [:wpl] fjalë për rresht."
@@ -76,18 +76,18 @@ long2 = "Mesatarja e [:channel] ishte [:avg] gërma për rresht."
 short1 = "<b>[:nick]</b> shkruajti rreshtat më të shkurtër, mesatarisht [:letters] gërma për rresht."
 short2 = "Edhe <b>[:nick]</b> ishte përtac, gjithashtu, mesatarisht [:letters] gërma."
 
-foul1 = "<b>[:nick]</b> ishte llapazan.  [:per]% e fjalëve ishin të tepërta."
+foul1 = "<b>[:nick]</b> ishte llapazan. [:per]% e fjalëve ishin të tepërta."
 foul2 = "<b>[:nick]</b> gjithashtu mërzit të tjerët, [:per]% të kohës."
 foul3 = "Asnjëri nuk foli keq në [:channel]! Shumë përjashtime?"
 foultext = "<b>Përshembull, si kjo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-smiles1 = "<b>[:nick]</b> lumturon botën.  [:per]% e rreshtave përmbante buzëqeshje.  :)"
+smiles1 = "<b>[:nick]</b> lumturon botën. [:per]% e rreshtave përmbante buzëqeshje. :)"
 smiles2 = "As <b>[:nick]</b> nuk është i mërzitur, duke buzëqeshur [:per]% të kohës."
 smiles3 = "Asnjeri nuk buzëqeshi në [:channel]! Gëzohuni djem dhe vajza!"
 
-sad1 = "<b>[:nick]</b> ngjan i mërzitur për momentin:  [:per]% e rreshtave përmbante mërzitje.  :("
+sad1 = "<b>[:nick]</b> ngjan i mërzitur për momentin: [:per]% e rreshtave përmbante mërzitje. :("
 sad2 = "Edhe <b>[:nick]</b> është i mërzitur, duke u qarë [:per]% të kohës."
-sad3 = "Asnjeri nuk është i mërzitur në [:channel]!  Sa kanal i qeshur!  :-)"
+sad3 = "Asnjeri nuk është i mërzitur në [:channel]! Sa kanal i qeshur! :-)"
 
 month = "Janar Shkurt Mars Prill Maj Qershor Korrik Gusht Shtator Tetor Nëntor Dhjetor"
 day = "Dielën, Hënën, Martën, Mërkurën, Enjten, Premten, Shtunën,"

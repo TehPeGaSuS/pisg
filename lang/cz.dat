@@ -38,7 +38,7 @@ shout3 = "Nikdo tu na <b>!</> ani nešáhl, wow."
 
 allcaps1 = "Vypadá to, e <b>[:nick]</b> drel svuj SHIFT [:per]% celeho èasu co psal(a)."
 allcaps2 = "<b>[:nick]</b> pravì zapomel vypnout svùj Caps-Lock. [:Napsal:a:] VELKİM [:per]% of the time."
-allcaps3 = "Kadej mìl svùj shift-key pod kontrolou.  :)"
+allcaps3 = "Kadej mìl svùj shift-key pod kontrolou. :)"
 allcapstext = "<b>Napriklad:</b>&nbsp;[:line]"
 
 violent1 = "<b>[:nick]</b> je velmi agresivni osoba. Napadl(a) <b>[:attacks]</b>x ostatní."
@@ -86,7 +86,7 @@ smiles3 = "Nikdo se na [:channel] nesmìje! Chtìlo by to tu trošku rozjet."
 
 sad1 = "<b>[:nick]</b> nevypadá zrovna šastnì. [:per]% z toho co napsal(a) obsahuje smutnı oblièej. :("
 sad2 = "<b>[:nick]</b> je taky nešastná osoba, pláèe [:per]% zaznamenaného cyklu."
-sad3 = "Všeci jsou na [:channel] vysmatí!  Usmìj se taky. :-)"
+sad3 = "Všeci jsou na [:channel] vysmatí! Usmìj se taky. :-)"
 
 month = "Ledena Února Bøezna Dubna Kvìtena Èervna Èervence Srpna Záøí Øíjna Listopadu Prosince"
 day = "Pondelí Uterı Støedu Ètvrtek Pátek Sobotu Nedìli"

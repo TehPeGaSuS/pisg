@@ -28,33 +28,33 @@ action2 = "Ook, <b>[:nick]</b> verteld ons wat er aan de hand is met [:actions] 
 action3 = "Geen acties in [:channel]!"
 actiontext = "<b>Zoals dit bijvoorbeeld:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-question1 = "Is <b>[:nick]</b> stom of stelt [:hij:zij:] gewoon te veel vragen?  [:per]% regels bevatten een vraag!"
-question2 = "<b>[:nick]</b> wist ook al niet zoveel.  [:per]% van [:zijn:haar:] regels waren vragen."
+question1 = "Is <b>[:nick]</b> stom of stelt [:hij:zij:] gewoon te veel vragen? [:per]% regels bevatten een vraag!"
+question2 = "<b>[:nick]</b> wist ook al niet zoveel. [:per]% van [:zijn:haar:] regels waren vragen."
 question3 = "Niemand stelde hier vragen; alleen maar genieën in dit kanaal?"
 
 shout1 = "De luidste was <b>[:nick]</b>, die schreeuwde [:per]% van de tijd!"
 shout2 = "Een andere <i>beruchte schreeuwer</i> was <b>[:nick]</b>, die schreeuwde [:per]% van de tijd!"
 shout3 = "Er schreeuwde helemaal niemand, wow."
 
-allcaps1 = "Het schijnt dat <b>[:nick]</b>'s shift-toets blijft hangen:  [:per]% van de tijd schreef [:hij:zij:] IN HOOFDLETTERS."
-allcaps2 = "<b>[:nick]</b> vergat gewoon [:zijn:haar:] Caps-Lock uit te zetten.  [:Hij:Zij:] schreef IN HOOFDLETTERS [:per]% van de tijd."
-allcaps3 = "Iedereen had hun shift-toets onder controle.  :)"
+allcaps1 = "Het schijnt dat <b>[:nick]</b>'s shift-toets blijft hangen: [:per]% van de tijd schreef [:hij:zij:] IN HOOFDLETTERS."
+allcaps2 = "<b>[:nick]</b> vergat gewoon [:zijn:haar:] Caps-Lock uit te zetten. [:Hij:Zij:] schreef IN HOOFDLETTERS [:per]% van de tijd."
+allcaps3 = "Iedereen had hun shift-toets onder controle. :)"
 allcapstext = "<b>Zoals dit bijvoorbeeld:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-violent1 = "<b>[:nick]</b> is een zeer agressief persoon.  [:Hij:Zij:] viel andere <b>[:attacks]</b> keer aan."
-violent2 = "<b>[:nick]</b> kan ook [:zijn:haar:] agressie niet onder controle houden.  [:Hij:Zij:] pestte andere <b>[:attacks]</b> keer."
-violent3 = "Niemand sloeg iemand in elkaar.  Iedereen was vriendelijk."
+violent1 = "<b>[:nick]</b> is een zeer agressief persoon. [:Hij:Zij:] viel andere <b>[:attacks]</b> keer aan."
+violent2 = "<b>[:nick]</b> kan ook [:zijn:haar:] agressie niet onder controle houden. [:Hij:Zij:] pestte andere <b>[:attacks]</b> keer."
+violent3 = "Niemand sloeg iemand in elkaar. Iedereen was vriendelijk."
 violenttext = "<b>Zoals dit bijvoorbeeld:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-attacked1 = "Arme <b>[:nick]</b>, niemand mag [:hem:haar:].  [:Hij:Zij:] werd <b>[:attacks]</b> keer aangevallen."
-attacked2 = "<b>[:nick]</b> schijnt ook niet aardig gevonden te worden.  [:Hij:Zij:] kreeg <b>[:attacks]</b> keer een pak slaag."
+attacked1 = "Arme <b>[:nick]</b>, niemand mag [:hem:haar:]. [:Hij:Zij:] werd <b>[:attacks]</b> keer aangevallen."
+attacked2 = "<b>[:nick]</b> schijnt ook niet aardig gevonden te worden. [:Hij:Zij:] kreeg <b>[:attacks]</b> keer een pak slaag."
 attackedtext = "<b>Zoals dit bijvoorbeeld:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 gotkick1 = "<b>[:nick]</b> was niet erg populair, werd [:kicks] keer geschopt!"
-gotkick2 = "<b>[:nick]</b> Schijnt ook gehaat te worden:  [:kicks] schoppen ontvangen."
+gotkick2 = "<b>[:nick]</b> Schijnt ook gehaat te worden: [:kicks] schoppen ontvangen."
 kicktext = "<b>Zoals dit bijvoorbeeld:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-joins = "<b>[:nick]</b> kon maar niet beslissen om te blijven of om te gaan.  [:joins] entrees tijdens deze rapportageperiode!"
+joins = "<b>[:nick]</b> kon maar niet beslissen om te blijven of om te gaan. [:joins] entrees tijdens deze rapportageperiode!"
 
 kick1 = "<b>[:nick]</b> is of krankzinnig of gewoon een eerlijke op, schopte een totaal van [:kicked] mensen!"
 kick2 = "[:oldnick]'s trouwe volger, <b>[:nick]</b>, schopte ongeveer [:kicked] mensen."
@@ -62,9 +62,9 @@ kick3 = "Vriendelijke opers hier, niemand werd geschopt!"
 
 words1 = "<b>[:nick]</b> sprak in totaal [:words] woorden!"
 words2 = "[:oldnick]'s trouwe volger, <b>[:nick]</b>, sprak niet zo veel: [:words] woorden."
-words3 = "Niemand zei er wat...  Wat een vreemd kanaal..."
+words3 = "Niemand zei er wat... Wat een vreemd kanaal..."
 
-mono1 = "<b>[:nick]</b> praat veel met [:zich:haar:]zelf.  [:Hij:Zij:] schreef meer dan 5 regels achter elkaar en dat [:monos] keer!"
+mono1 = "<b>[:nick]</b> praat veel met [:zich:haar:]zelf. [:Hij:Zij:] schreef meer dan 5 regels achter elkaar en dat [:monos] keer!"
 mono2 = "Een andere eenzame was <b>[:nick]</b>, die er [:monos] keer in slaagde."
 
 wpl1 = "<b>[:nick]</b> schreef gemiddeld [:wpl] woorden per regel."
@@ -76,18 +76,18 @@ long2 = "[:channel] gemiddelde was [:avg] letters per regel."
 short1 = "<b>[:nick]</b> schreef de kortste regels, gemiddeld [:letters] karakters per regel."
 short2 = "<b>[:nick]</b> hield ook de lippen op elkaar, gemiddeld [:letters] karakters."
 
-foul1 = "<b>[:nick]</b> heeft een behoorlijke brutale mond.  [:per]% van de woorden waren ongepast."
+foul1 = "<b>[:nick]</b> heeft een behoorlijke brutale mond. [:per]% van de woorden waren ongepast."
 foul2 = "<b>[:nick]</b>  laat zelfs zeelieden blozen, [:per]% van de tijd."
-foul3 = "Niemand heeft een grote mond in [:channel]!  Komt men wel eens buiten?"
+foul3 = "Niemand heeft een grote mond in [:channel]! Komt men wel eens buiten?"
 foultext = "<b>Zoals dit bijvoorbeeld:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-smiles1 = "<b>[:nick]</b> brengt geluk in de wereld.  [:per]% regels bevatte lachende gezichten.  :)"
+smiles1 = "<b>[:nick]</b> brengt geluk in de wereld. [:per]% regels bevatte lachende gezichten. :)"
 smiles2 = "<b>[:nick]</b> is ook geen somber persoon, lachte [:per]% van de tijd."
-smiles3 = "Niemand lacht in [:channel]!  Kop op jongens en meiden."
+smiles3 = "Niemand lacht in [:channel]! Kop op jongens en meiden."
 
-sad1 = "<b>[:nick]</b> schijnt op het ogenblik somber te zijn:  [:per]% regels bevatte sombere gezichten.  :("
+sad1 = "<b>[:nick]</b> schijnt op het ogenblik somber te zijn: [:per]% regels bevatte sombere gezichten. :("
 sad2 = "<b>[:nick]</b> is ook een somber persoon, huilde [:per]% van de tijd."
-sad3 = "Niemand is somber in [:channel]!  Wat een gelukkig kanaal.  :-)"
+sad3 = "Niemand is somber in [:channel]! Wat een gelukkig kanaal. :-)"
 
 month = "Januari Februari Maart April Mei Juni Juli Augustus September Oktober November December"
 day = "Zondag Maandag Dinsdag Woensdag Donderdag Vrijdag Zaterdag"

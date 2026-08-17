@@ -28,17 +28,17 @@ action2 = "Também [:o:a:] <b>[:nick]</b> nos diz o que anda a tramar com [:actio
 action3 = "Não houve acções no [:channel]!"
 actiontext = "<b>Por exemplo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-question1 = "<b>[:nick]</b> é muito [:curioso:curiosa:]:  [:per]% das suas linhas contém uma pergunta!"
-question2 = "Também [:o:a:] <b>[:nick]</b> não anda longe:  [:per]% das suas linhas foram interrogativas."
+question1 = "<b>[:nick]</b> é muito [:curioso:curiosa:]: [:per]% das suas linhas contém uma pergunta!"
+question2 = "Também [:o:a:] <b>[:nick]</b> não anda longe: [:per]% das suas linhas foram interrogativas."
 question3 = "Ninguém perguntou nada. Ninguém quer saber de nada?"
 
 shout1 = "[:O:A:] mais estridente foi [:o:a:] <b>[:nick]</b>, que gritou [:per]% do tempo!"
 shout2 = "Outra <i>corneta</i> foi [:o:a:] <b>[:nick]</b>, que berrou [:per]% do tempo!"
 shout3 = "Ninguém grita no canal, ena!"
 
-allcaps1 = "Parece que a tecla shift [:do:da:] <b>[:nick]</b> está presa:  Em [:per]% do tempo escreveu em MAIÚSCULAS!"
+allcaps1 = "Parece que a tecla shift [:do:da:] <b>[:nick]</b> está presa: Em [:per]% do tempo escreveu em MAIÚSCULAS!"
 allcaps2 = "<b>[:nick]</b> esqueceu-se de desligar o caps-lock. [:Ele:Ela:] escreveu em MAIÚSCULAS [:per]% do tempo."
-allcaps3 = "Toda a gente manteve as suas teclas shift sob controlo.  :)"
+allcaps3 = "Toda a gente manteve as suas teclas shift sob controlo. :)"
 allcapstext = "<b>Por exemplo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 violent1 = "<b>[:nick]</b> é uma pessoa muito agressiva. [:Ele:Ela:] atacou outros <b>[:attacks]</b> vezes!"
@@ -46,12 +46,12 @@ violent2 = "<b>[:nick]</b> também não controla a sua agressão. [:Ele:Ela:] pegou
 violent3 = "Ninguém agrediu ninguém no canal. Todos são amigos."
 violenttext = "<b>Por exemplo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-attacked1 = "Pobre <b>[:nick]</b>, ninguém gosta [:dele:dela:].  Foi [:atacado:atacada:] <b>[:attacks]</b> vezes."
+attacked1 = "Pobre <b>[:nick]</b>, ninguém gosta [:dele:dela:]. Foi [:atacado:atacada:] <b>[:attacks]</b> vezes."
 attacked2 = "<b>[:nick]</b> também parece ser [:odiado:odiada:]. Recebeu <b>[:attacks]</b> ataques."
 attackedtext = "<b>Por exemplo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 gotkick1 = "<b>[:nick]</b> não é lá muito popular, sendo [:kickado:kickada:] [:kicks] vezes!"
-gotkick2 = "<b>[:nick]</b> também não recebe muita estima:  [:kicks] kicks recebidos."
+gotkick2 = "<b>[:nick]</b> também não recebe muita estima: [:kicks] kicks recebidos."
 kicktext = "<b>Por exemplo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 joins = "<b>[:nick]</b> não sabe se fica ou se sai. [:joins] joins relatados!"
@@ -76,18 +76,18 @@ long2 = "A média do [:channel] é de [:avg] letras por linha."
 short1 = "<b>[:nick]</b> escreveu as linhas mais curtas, com uma média de [:letters] letras por linha."
 short2 = "<b>[:nick]</b> também tecla pouco, com uma média de [:letters] letras."
 
-foul1 = "<b>[:nick]</b> tem uma boca suja.  [:per]% das suas palavras eram palavrões."
+foul1 = "<b>[:nick]</b> tem uma boca suja. [:per]% das suas palavras eram palavrões."
 foul2 = "<b>[:nick]</b> também faz corar um pedreiro, praguejando [:per]% do tempo."
 foul3 = "Ninguém diz asneiras no [:channel]! Incrível!"
 foultext = "<b>Por exemplo:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-smiles1 = "<b>[:nick]</b> é muito feliz.  [:per]% das linhas contém caras sorridentes.  :)"
+smiles1 = "<b>[:nick]</b> é muito feliz. [:per]% das linhas contém caras sorridentes. :)"
 smiles2 = "<b>[:nick]</b> também não é nada triste, sorrindo [:per]% do tempo."
 smiles3 = "Ninguém sorri no [:channel]! Animem-se!"
 
-sad1 = "<b>[:nick]</b> parece estar triste:  [:per]% contém caras tristes.  :("
+sad1 = "<b>[:nick]</b> parece estar triste: [:per]% contém caras tristes. :("
 sad2 = "<b>[:nick]</b> também não anda longe, chorando [:per]% do tempo."
-sad3 = "Ninguém chora no [:channel]! Que canal alegre!  :)"
+sad3 = "Ninguém chora no [:channel]! Que canal alegre! :)"
 
 month = "Janeiro Fevereiro Março Abril Maio Junho Julho Agosto Setembro Outubro Novembro Dezembro"
 day = "Domingo Segunda Terça Quarta Quinta Sexta Sabado"

@@ -29,22 +29,22 @@ action3 = "Nobenih dejanj na kanalu [:channel]!"
 actiontext = "<b>Najbolj izstopa primer:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 question1 = "Je <b>[:nick]</b> res najbolj [:neumen:neumna:] na tem kanalu ali samo sprasuje veliko vprasanj? [:per]% [:njegovih:njenih:] vrstic so bila vprasanja!"
-question2 = "<b>[:nick]</b> ni [:imel:imela:] pojma o nicemer.  [:per]% [:njegovih:njenih:] vrstic so bila vprasanja."
+question2 = "<b>[:nick]</b> ni [:imel:imela:] pojma o nicemer. [:per]% [:njegovih:njenih:] vrstic so bila vprasanja."
 question3 = "Nihce ni nic vprasal na tem kanalu; ocitno so sami geniji na tem kanalu?"
 
 shout1 = "Najbolj [:glasen:glasna:] je [:bil:bila:] <b>[:nick]</b>, ki se je [:drl:drla:] kar [:per]% svojega govorjenja na kanalu!"
 shout2 = "Naziv <i>Hripav cucek</i> pa dobi: <b>[:nick]</b>, ki je z nami [:delil:delila:] [:per]% svojega lajanja na kanalu!"
 shout3 = "Nihce ni nikoli krical."
 
-allcaps1 = " <b>[:nick]</b> je [:imel:imela:] zataknjeno tipko shift:  [:per]% svojega pisanja je [:pisal:pisalaa:] z VELIKIMI CRKAMI!"
+allcaps1 = " <b>[:nick]</b> je [:imel:imela:] zataknjeno tipko shift: [:per]% svojega pisanja je [:pisal:pisalaa:] z VELIKIMI CRKAMI!"
 allcaps2 = "<b>[:nick]</b> je [:pozabil:pozabila:] ponovno pritisniti svojo Caps-Lock tipko. Z VELIKIMI CRKAMI je [:pisal:pisala:] kar [:per]% svojega besedicenja na kanalu."
-allcaps3 = "Vsi so imeli svojo shift tipko pod kontrolo.  :)"
+allcaps3 = "Vsi so imeli svojo shift tipko pod kontrolo. :)"
 allcapstext = "<b>Ce si pogledamo tale primer:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 
 violent1 = "<b>[:nick]</b> je zelo [:agresiven:agresivna:]. <b>[:attacks]</b>-krat je [:napadel:napadla:] druge ljudi na kanalu."
 violent2 = "<b>[:nick]</b> tudi ni [:znal:znala:] kontorlirati svoje jeze. Na druge se je [:spravil:spravila:] <b>[:attacks]</b>-krat!" 
-violent3 = "Nihce ni nikogar napadel.  Vsi so bili prijazni."
+violent3 = "Nihce ni nikogar napadel. Vsi so bili prijazni."
 violenttext = "<b>Vzemimo primer:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 attacked1 = "[:Bogi:Boga:] <b>[:nick]</b>. Nihce [:ga:je:] ne mara. [:Bil:Bila:] je [:napaden:napadena:] <b>[:attacks]</b>-krat."
@@ -63,7 +63,7 @@ kick3 = "Kaksni dobri operaterji, nikogar niso brcnili iz kanala!"
 
 words1 = "<b>[:nick]</b> je [:povedal:povedala:] vsega skupaj [:words] besed!"
 words2 = "Sledi mu <b>[:nick]</b>, ki pa ni kaj dosti manj [:govoril:govorila:]: [:words] besed."
-words3 = "Nihce ni nic rekel...  Kaksen cuden kanal..."
+words3 = "Nihce ni nic rekel... Kaksen cuden kanal..."
 
 mono1 = "<b>[:nick]</b> je veliko [:govoril:govorila:] [:sam:sama:] s sabo. [:Napisal:Napisala:] je 5 vrstic naenkrat, kar [:monos]-krat!"
 mono2 = "Tudi <b>[:nick]</b> spada med osamljene osebe, saj je [:pisal:pisala:] [:samemu:sami:] sebi kar [:monos] krat."
@@ -77,18 +77,18 @@ long2 = "Povprecje kanala [:channel] je bilo [:avg] znakov na vrstico."
 short1 = "<b>[:nick]</b> je [:pisal:pisala:] najkrajse vrstice, ki so vsebovale samo [:letters] znakov na vrsico."
 short2 = "[:nick] mu je [:sledil:sledila:] z [:letters] znaki na vrstico."
 
-foul1 = "<b>[:nick]</b> je [:imel:imela:] umazana usta.  [:per]% [:njegovih:njenih:] vrstic je vsebovalo grde besede."
+foul1 = "<b>[:nick]</b> je [:imel:imela:] umazana usta. [:per]% [:njegovih:njenih:] vrstic je vsebovalo grde besede."
 foul2 = "<b>[:nick]</b> pa ni [:zaostajal:zaostajala:] dosti, [:per]% [:njegovih:njenih:] besed so bile kletvice."
-foul3 = "Nihce ni grdo govoril na kanalu [:channel]!  A sploh kej ven hod'te?"
+foul3 = "Nihce ni grdo govoril na kanalu [:channel]! A sploh kej ven hod'te?"
 foultext = "Cisti primer je: </b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
-smiles1 = "<b>[:nick]</b> je [:prinasal:prinasala:] sreco na ta svet.  [:per]% [:njegovih:njenih:] vrstic so bili smeskoti.  :)"
+smiles1 = "<b>[:nick]</b> je [:prinasal:prinasala:] sreco na ta svet. [:per]% [:njegovih:njenih:] vrstic so bili smeskoti. :)"
 smiles2 = "<b>[:nick]</b> tudi ni zalostna oseba, saj se smeje [:per]% vsega svojega casa."
-smiles3 = "Nihce se ni smejal na kanalu[:channel]!  Razveseliti vas bo treba fantje in punce."
+smiles3 = "Nihce se ni smejal na kanalu[:channel]! Razveseliti vas bo treba fantje in punce."
 
-sad1 = "<b>[:nick]</b> je verjetno zelo [:zalosten:zalostna:] ta trenuek, ker je:  [:per]% vrstic vsebovalo zalostne smeskote.  :("
+sad1 = "<b>[:nick]</b> je verjetno zelo [:zalosten:zalostna:] ta trenuek, ker je: [:per]% vrstic vsebovalo zalostne smeskote. :("
 sad2 = "<b>[:nick]</b> je tudi zalostna oseba, saj je [:jokal:jokala:] [:per]% svojega govorjenja."
-sad3 = "Nihce ni zalosten na kanalu [:channel]!  Kaksen vesel kanal.  :-)"
+sad3 = "Nihce ni zalosten na kanalu [:channel]! Kaksen vesel kanal. :-)"
 
 month = "Januar Februar Marec April Maj Junij Julij Avgust September Oktober November December"
 day = "Nedelja Ponedeljek Torek Sreda Cetrtek Petek Sobota"

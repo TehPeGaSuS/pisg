@@ -38,7 +38,7 @@ shout3 = "Lahe! Kõik rääkisid vaikse häälega."
 
 allcaps1 = "Tundub et <b>[:nick]</b> shift'i nupp vajub iseenesest alla: [:per]% ajast kirjutas SUURTE TÄHTEDEGA."
 allcaps2 = "<b>[:nick]</b> unustas oma Caps-Lock'i peale. [:per]% ajast kirjutas SUURTE TÄHTEDEGA."
-allcaps3 = "Kõik kirjutasid väikeste tähtedega.  :)"
+allcaps3 = "Kõik kirjutasid väikeste tähtedega. :)"
 allcapstext = "<b>Nagu näiteks:</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[:line]"
 
 violent1 = "<b>[:nick]</b> on väga agressiivne persoon. Ta peksis teisi <b>[:attacks]</b> kord(a)."
@@ -61,7 +61,7 @@ kick2 = "Noh <b>[:nick]</b> mõtles, et näitab ka oma võimu ja andis [:kicked] sa
 kick3 = "Kõik käitusid hästi ja keegi ei saanud kick'i!"
 words1 = "<b>[:nick]</b> kirjutas kokku [:words] sõna!"
 words2 = "<b>[:nick]</b> rääkis natuke vähem kui [:oldnick]: [:words] sõna."
-words3 = "Keegi ei öelnud mitte kui midagi...  Väga imelik kanal..."
+words3 = "Keegi ei öelnud mitte kui midagi... Väga imelik kanal..."
 
 mono1 = "<b>[:nick]</b> rääkis väga palju omaette. Ta kirjutas rohkem kui 5 rida järjest [:monos]-l korral!"
 mono2 = "Väga üksikuna tundis ennast <b>[:nick]</b> ja seda [:monos]-l korral."
