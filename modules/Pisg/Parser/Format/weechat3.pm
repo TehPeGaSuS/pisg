@@ -69,9 +69,15 @@ sub thirdline
             $hash{kicker} = $3;
 
         } elsif ($4.$5.$6 eq 'haschangedtopic') {
-            $hash{newtopic} = $8;
-            $hash{newtopic} =~ m/" to "(.*)"/;
-            $hash{newtopic} = $1;
+            # Matches both "...to "newtopic"" (fresh topic, when WeeChat's
+            # irc.look.display_old_topic is off) and "...from "oldtopic"
+            # to "newtopic"" (default): grab the text inside the last pair
+            # of quotes. The old m/" to "(.*)"/ pattern only matched the
+            # "from...to..." form and silently left $1 (and thus newtopic)
+            # holding stale data from elsewhere on the "to" only form.
+            if ($8 =~ /"([^"]*)"\s*$/) {
+                $hash{newtopic} = $1;
+            }
 
         } elsif ($3 eq 'Mode') {
             $hash{newmode} = substr($5, 1);
